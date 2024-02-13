@@ -8,22 +8,27 @@
   </head>
   <body>
     <header class="header">
-      <h1 class="header__title">BANDSITE</h1>
-      <nav class="nav">
-        <a href="#" class="nav__link">Biography</a>
-        <a href="#" class="nav__link">Shows</a>
-      </nav>
+      <div class="header__container">
+        <img
+          src="./assets/logos/Logo-bandsite.svg"
+          alt="Bandsite logo"
+          class="header__logo"
+        />
+        <nav class="nav">
+          <a href="#" class="nav__link nav__link--active">Biography</a>
+          <a href="#" class="nav__link">Shows</a>
+        </nav>
+      </div>
       <hero class="hero">
-        <h1 class="hero__band-name">The Bees Knees</h1>
+        <div class="hero__overlay"></div>
+        <div class="hero__container">
+          <h1 class="hero__band-name">The Bees Knees</h1>
+        </div>
       </hero>
     </header>
     <section class="about">
       <h2 class="about__title">About the Musicians</h2>
-      <img
-        src="./assets/images/band.jpg"
-        alt="The band on stage at a concert"
-        class="about__image"
-      />
+      <img src="#" alt="The band on stage at a concert" class="about__image" />
       <p class="about__quote">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius soluta
         molestias corrupti obcaecati inventore ipsum?
@@ -42,7 +47,7 @@
         repudiandae. Esse, eaque!
       </p>
     </section>
-    <section class="gallery">
+    <!-- <section class="gallery">
       <h2 class="gallery__title">Photo Gallery</h2>
       <div class="gallery__container">
         <img
@@ -91,7 +96,7 @@
           class="gallery__image"
         />
       </div>
-    </section>
+    </section> -->
     <footer class="footer"></footer>
   </body>
 </html>

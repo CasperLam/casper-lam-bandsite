@@ -1,0 +1,31 @@
+@use "./variables" as *;
+
+.hero {
+  background-image: url(../../assets/images/hero-bio.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 10rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+
+  &__overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: $bandsite-black;
+    opacity: 50%;
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 1020px;
+    margin: auto;
+    padding: 0 1rem;
+  }
+
+  &__band-name {
+    color: $white;
+  }
+}
