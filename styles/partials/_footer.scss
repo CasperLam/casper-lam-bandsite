@@ -1,0 +1,23 @@
+@use "./variables" as *;
+
+.footer {
+  background-color: $bandsite-black;
+  color: $white;
+  max-width: $max-width;
+  padding: 1.5rem 1rem 0.5rem 1rem;
+
+  & * {
+    margin-bottom: 1rem;
+    // justify-content: flex-start;
+  }
+
+  &__social-icon {
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+    height: 1.5rem;
+  }
+
+  &__end {
+    margin-top: 3rem;
+  }
+}
