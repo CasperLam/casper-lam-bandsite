@@ -46,7 +46,7 @@ body {
   padding: 1rem;
 }
 .nav__link--active {
-  border-bottom: 3px solid #fff;
+  border-bottom: 5px solid #fff;
   color: #fff;
   font-weight: bold;
 }
@@ -55,7 +55,7 @@ body {
   background-image: url(../../assets/images/hero-bio.jpg);
   background-position: center;
   background-size: cover;
-  height: 10rem;
+  height: 15rem;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -75,4 +75,24 @@ body {
   margin: auto;
   padding: 0 1rem;
   color: #fff;
+}
+
+.about {
+  max-width: 1020px;
+  margin: 1.5rem 1rem 0 1rem;
+}
+.about * {
+  margin-bottom: 1rem;
+}
+.about__image {
+  width: 100%;
+}
+.about__quote, .about__quote-author {
+  font-weight: bold;
+}
+.about__quote {
+  margin-bottom: 0.5rem;
+}
+.about__name {
+  margin-top: 1.5rem;
 }/*# sourceMappingURL=bio.css.map */

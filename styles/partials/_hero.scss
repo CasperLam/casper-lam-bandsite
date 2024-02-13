@@ -4,7 +4,7 @@
   background-image: url(../../assets/images/hero-bio.jpg);
   background-position: center;
   background-size: cover;
-  height: 10rem;
+  height: 15rem;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -21,7 +21,7 @@
   &__band-name {
     position: relative;
     width: 100%;
-    max-width: 1020px;
+    max-width: $max-width;
     margin: auto;
     padding: 0 1rem;
     color: $white;

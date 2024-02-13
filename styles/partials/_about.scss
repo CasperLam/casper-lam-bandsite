@@ -1,0 +1,27 @@
+@use "./variables" as *;
+
+.about {
+  max-width: $max-width;
+  margin: 1.5rem 1rem 0 1rem;
+
+  & * {
+    margin-bottom: 1rem;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__quote,
+  &__quote-author {
+    font-weight: bold;
+  }
+
+  &__quote {
+    margin-bottom: 0.5rem;
+  }
+
+  &__name {
+    margin-top: 1.5rem;
+  }
+}
