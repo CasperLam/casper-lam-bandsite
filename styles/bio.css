@@ -69,11 +69,13 @@ body {
   opacity: 50%;
 }
 .hero__container {
+  position: relative;
+  width: 100%;
+}
+.hero__band-name {
   width: 100%;
   max-width: 1020px;
   margin: auto;
   padding: 0 1rem;
-}
-.hero__band-name {
   color: #fff;
 }/*# sourceMappingURL=bio.css.map */
