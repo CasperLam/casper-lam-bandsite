@@ -95,4 +95,15 @@ body {
 }
 .about__name {
   margin-top: 1.5rem;
+}
+
+.gallery {
+  max-width: 1020px;
+  margin: 1.5rem 1rem 0 1rem;
+}
+.gallery * {
+  margin-bottom: 1rem;
+}
+.gallery__image {
+  width: 100%;
 }/*# sourceMappingURL=bio.css.map */

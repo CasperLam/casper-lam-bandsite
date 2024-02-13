@@ -1,0 +1,14 @@
+@use "./variables" as *;
+
+.gallery {
+  max-width: $max-width;
+  margin: 1.5rem 1rem 0 1rem;
+
+  & * {
+    margin-bottom: 1rem;
+  }
+
+  &__image {
+    width: 100%;
+  }
+}
