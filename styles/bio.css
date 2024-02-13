@@ -68,11 +68,8 @@ body {
   background-color: #323232;
   opacity: 50%;
 }
-.hero__container {
-  position: relative;
-  width: 100%;
-}
 .hero__band-name {
+  position: relative;
   width: 100%;
   max-width: 1020px;
   margin: auto;
