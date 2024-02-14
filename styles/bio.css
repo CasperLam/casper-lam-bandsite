@@ -1,3 +1,21 @@
+@font-face {
+  font-family: Avenir Next LT Pro;
+  src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf) format(opentype), url(../../assets/fonts/AvenirNextLTPro.ttf) format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Avenir Next LT Pro-Demi;
+  src: url(../../assets/fonts/AvenirNextLTPro-Demi.otf) format(opentype), url(../../assets/fonts/AvenirNextLTProDemi.ttf) format(truetype);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Avenir Next LT Pro-Bold;
+  src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf) format(opentype), url(../../assets/fonts/AvenirNextLTProBold.ttf) format(truetype);
+  font-weight: 700;
+  font-style: bold;
+}
 *,
 *::before,
 *::after {
@@ -7,13 +25,22 @@
 }
 
 body {
-  font-family: avenir-next;
+  font-family: "Avenir Next LT Pro";
+  line-height: 1.5rem;
 }
 
-@font-face {
-  font-family: avenir-next;
-  src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf);
+h1,
+h2 {
+  font-family: "Avenir Next LT Pro-Bold";
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
+
+h3 {
+  font-family: "Avenir Next LT Pro-Demi";
+  line-height: 1.5rem;
+}
+
 .header {
   background-color: #323232;
   width: 100%;
@@ -88,7 +115,7 @@ body {
   width: 100%;
 }
 .about__quote, .about__quote-author {
-  font-weight: bold;
+  font-family: "Avenir Next LT Pro-Bold";
 }
 .about__quote {
   margin-bottom: 0.5rem;
@@ -98,16 +125,20 @@ body {
 }
 
 .gallery {
-  max-width: 1020px;
-  margin: 1.5rem 1rem 0 1rem;
+  background-color: #fafafa;
 }
 .gallery * {
   margin-bottom: 1rem;
 }
+.gallery__container {
+  max-width: 1020px;
+  padding: 1.5rem 1rem 0 1rem;
+  margin-bottom: 0;
+}
 .gallery__image {
   width: 100%;
 }
-.gallery__container {
+.gallery__image-list {
   margin: 0;
 }
 
@@ -124,6 +155,9 @@ body {
   margin-right: 1.5rem;
   margin-bottom: 0;
   height: 1.5rem;
+}
+.footer__card {
+  margin-top: 1.5rem;
 }
 .footer__end {
   margin-top: 3rem;
