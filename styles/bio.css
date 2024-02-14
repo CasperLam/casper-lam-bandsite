@@ -72,7 +72,7 @@ h3 {
   text-align: center;
   padding: 1rem;
 }
-.nav__link--active {
+.nav__link--active, .nav__link:hover {
   border-bottom: 5px solid #fff;
   color: #fff;
   font-weight: bold;

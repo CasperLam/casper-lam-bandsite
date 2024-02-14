@@ -12,7 +12,8 @@
     text-align: center;
     padding: 1rem;
 
-    &--active {
+    &--active,
+    &:hover {
       border-bottom: 5px solid $white;
       color: $white;
       font-weight: bold;
