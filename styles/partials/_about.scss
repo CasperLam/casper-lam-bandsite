@@ -1,11 +1,40 @@
 @use "./variables" as *;
+@use "./mixins" as *;
 
 .about {
   max-width: $max-width;
   margin: 1.5rem 1rem 0 1rem;
 
+  @include tablet-up {
+    margin: 3rem 2rem 0 2rem;
+  }
+
+  @include desktop-up {
+    margin: 3rem auto 0 auto;
+  }
+
   & * {
     margin-bottom: 1rem;
+
+    @include tablet-up {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__title {
+    @include tablet-up {
+      font-size: 2rem;
+    }
+  }
+
+  &__container {
+    @include tablet-up {
+      margin: 0 2.5rem;
+    }
+
+    @include desktop-up {
+      margin: 0 4rem;
+    }
   }
 
   &__image {
@@ -19,9 +48,36 @@
 
   &__quote {
     margin-bottom: 0.5rem;
+
+    @include tablet-up {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+
+    @include desktop-up {
+      width: 47rem;
+    }
   }
 
   &__name {
     margin-top: 1.5rem;
+
+    @include tablet-up {
+      margin-top: 3rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+
+  &__content-container {
+    margin: 0;
+    @include tablet-up {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &__content-left {
+    margin-right: 2rem;
   }
 }
