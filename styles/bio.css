@@ -49,13 +49,13 @@ h3 {
 }
 .header__container {
   width: 100%;
-  max-width: 1020px;
+  max-width: 63.75rem;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .header__container {
     flex-direction: row;
     align-items: center;
@@ -66,7 +66,7 @@ h3 {
   max-width: 7.5rem;
   margin-top: 1.5rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .header__logo {
     margin-top: 0;
     margin-right: 2rem;
@@ -78,7 +78,7 @@ h3 {
   justify-content: center;
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .nav {
     justify-content: flex-start;
   }
@@ -90,7 +90,7 @@ h3 {
   text-align: center;
   padding: 1rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .nav__link {
     width: -moz-fit-content;
     width: fit-content;
@@ -103,7 +103,7 @@ h3 {
   color: #fff;
   font-weight: bold;
 }
-@media (min-width: 1280px) {
+@media (min-width: 80rem) {
   .nav__link--active, .nav__link:hover {
     border-bottom-width: 3px;
   }
@@ -119,6 +119,16 @@ h3 {
   align-items: center;
   position: relative;
 }
+@media (min-width: 48rem) {
+  .hero {
+    height: 25rem;
+  }
+}
+@media (min-width: 80rem) {
+  .hero {
+    height: 40rem;
+  }
+}
 .hero__overlay {
   position: absolute;
   height: 100%;
@@ -129,14 +139,20 @@ h3 {
 .hero__band-name {
   position: relative;
   width: 100%;
-  max-width: 1020px;
+  max-width: 63.75rem;
   margin: auto;
   padding: 0 1rem;
   color: #fff;
 }
+@media (min-width: 48rem) {
+  .hero__band-name {
+    padding: 2rem;
+    font-size: 3.75rem;
+  }
+}
 
 .about {
-  max-width: 1020px;
+  max-width: 63.75rem;
   margin: 1.5rem 1rem 0 1rem;
 }
 .about * {
@@ -162,7 +178,7 @@ h3 {
   margin-bottom: 1rem;
 }
 .gallery__container {
-  max-width: 1020px;
+  max-width: 63.75rem;
   padding: 1.5rem 1rem 0 1rem;
   margin-bottom: 0;
 }
@@ -176,7 +192,7 @@ h3 {
 .footer {
   background-color: #323232;
   color: #fff;
-  max-width: 1020px;
+  max-width: 63.75rem;
   padding: 1.5rem 1rem 0.5rem 1rem;
 }
 .footer * {
