@@ -1,23 +1,50 @@
 @use "./variables" as *;
+@use "./mixins" as *;
 
 .gallery {
   background-color: $alabaster;
+  padding: 1.5rem 1rem 0 1rem;
+  margin-bottom: 0;
+
+  @include tablet-up {
+    padding: 3rem 2rem 0rem 2rem;
+  }
 
   & * {
     margin-bottom: 1rem;
+
+    @include tablet-up {
+      margin-bottom: 2rem;
+    }
   }
 
-  &__container {
+  &__title {
     max-width: $max-width;
-    padding: 1.5rem 1rem 0 1rem;
-    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tablet-up {
+      font-size: 2rem;
+    }
+  }
+
+  &__image-list {
+    max-width: $max-width;
+    margin: auto;
+
+    @include tablet-up {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 
   &__image {
     width: 100%;
-  }
 
-  &__image-list {
-    margin: 0;
+    @include tablet-up {
+      width: 30%;
+    }
   }
 }
