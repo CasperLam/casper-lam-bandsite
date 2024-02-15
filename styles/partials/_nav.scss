@@ -1,9 +1,14 @@
 @use "./variables" as *;
+@use "./mixins" as *;
 
 .nav {
   display: flex;
   justify-content: center;
   width: 100%;
+
+  @include tablet-up {
+    justify-content: flex-start;
+  }
 
   &__link {
     text-decoration: none;
@@ -12,11 +17,21 @@
     text-align: center;
     padding: 1rem;
 
+    @include tablet-up {
+      width: fit-content;
+      padding: 1.5rem 0;
+      margin: 0 2rem;
+    }
+
     &--active,
     &:hover {
-      border-bottom: 5px solid $white;
+      border-bottom: 4px solid $white;
       color: $white;
       font-weight: bold;
+
+      @include desktop-up {
+        border-bottom-width: 3px;
+      }
     }
   }
 }
