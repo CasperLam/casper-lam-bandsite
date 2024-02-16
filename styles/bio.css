@@ -1,7 +1,7 @@
 @font-face {
   font-family: Avenir Next LT Pro;
   src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf) format(opentype), url(../../assets/fonts/AvenirNextLTPro.ttf) format(truetype);
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
@@ -37,7 +37,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Avenir Next LT Pro-Demi";
+  font-family: "Avenir Next LT Pro";
   line-height: 1.5rem;
 }
 
@@ -276,27 +276,104 @@ h3 {
 }
 @media (min-width: 48rem) {
   .gallery__image {
-    width: 30%;
+    width: 31%;
   }
 }
 
 .footer {
+  width: 100%;
   background-color: #323232;
   color: #fff;
-  max-width: 63.75rem;
   padding: 1.5rem 1rem 0.5rem 1rem;
+}
+@media (min-width: 48rem) {
+  .footer {
+    padding: 3rem 2rem 1rem 2rem;
+  }
 }
 .footer * {
   margin-bottom: 1rem;
+}
+.footer__container {
+  max-width: 63.75rem;
+  margin: 0 auto;
+}
+@media (min-width: 48rem) {
+  .footer__start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 48rem) {
+  .footer__title {
+    font-size: 2rem;
+    width: 31%;
+  }
+}
+.footer__social-container {
+  width: 31%;
 }
 .footer__social-icon {
   margin-right: 1.5rem;
   margin-bottom: 0;
   height: 1.5rem;
 }
+.footer__logo-start {
+  display: none;
+  max-width: 7.5rem;
+}
+@media (min-width: 48rem) {
+  .footer__logo-start {
+    display: block;
+  }
+}
+.footer__logo-start-container {
+  width: 31%;
+  display: flex;
+  justify-content: end;
+}
+@media (min-width: 48rem) {
+  .footer__logo-end {
+    display: none;
+  }
+}
 .footer__card {
   margin-top: 1.5rem;
 }
+@media (min-width: 48rem) {
+  .footer__card {
+    width: 31%;
+  }
+}
+.footer__card--spacer {
+  display: none;
+}
+@media (min-width: 80rem) {
+  .footer__card--spacer {
+    display: block;
+  }
+}
+.footer__card-container {
+  margin: 0;
+}
+@media (min-width: 48rem) {
+  .footer__card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 48rem) {
+  .footer__card-email, .footer__card-content, .footer__card-name {
+    font-size: 0.9rem;
+  }
+}
 .footer__end {
   margin-top: 3rem;
+}
+@media (min-width: 48rem) {
+  .footer__end {
+    margin: 1rem 0 2rem 0;
+  }
 }/*# sourceMappingURL=bio.css.map */

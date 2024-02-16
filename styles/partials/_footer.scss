@@ -1,14 +1,42 @@
 @use "./variables" as *;
+@use "./mixins" as *;
 
 .footer {
+  width: 100%;
   background-color: $bandsite-black;
   color: $white;
-  max-width: $max-width;
   padding: 1.5rem 1rem 0.5rem 1rem;
+
+  @include tablet-up {
+    padding: 3rem 2rem 1rem 2rem;
+  }
 
   & * {
     margin-bottom: 1rem;
-    // justify-content: flex-start;
+  }
+
+  &__container {
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+
+  &__start {
+    @include tablet-up {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    @include tablet-up {
+      font-size: 2rem;
+      width: 31%;
+    }
+  }
+
+  &__social-container {
+    width: 31%;
   }
 
   &__social-icon {
@@ -17,11 +45,68 @@
     height: 1.5rem;
   }
 
+  &__logo {
+    &-start {
+      display: none;
+      max-width: 7.5rem;
+
+      @include tablet-up {
+        display: block;
+      }
+
+      &-container {
+        width: 31%;
+        display: flex;
+        justify-content: end;
+      }
+    }
+
+    &-end {
+      @include tablet-up {
+        display: none;
+      }
+    }
+  }
+
   &__card {
     margin-top: 1.5rem;
+
+    @include tablet-up {
+      width: 31%;
+    }
+
+    &--spacer {
+      display: none;
+
+      @include desktop-up {
+        display: block;
+      }
+    }
+
+    &-container {
+      margin: 0;
+
+      @include tablet-up {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    &-email,
+    &-content,
+    &-name {
+      @include tablet-up {
+        font-size: 0.9rem;
+      }
+    }
   }
 
   &__end {
     margin-top: 3rem;
+
+    @include tablet-up {
+      margin: 1rem 0 2rem 0;
+    }
   }
 }
