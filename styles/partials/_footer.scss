@@ -109,4 +109,10 @@
       margin: 1rem 0 2rem 0;
     }
   }
+
+  &__copyright {
+    @include tablet-up {
+      font-size: 0.9rem;
+    }
+  }
 }

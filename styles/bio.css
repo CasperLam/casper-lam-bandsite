@@ -376,4 +376,9 @@ h3 {
   .footer__end {
     margin: 1rem 0 2rem 0;
   }
+}
+@media (min-width: 48rem) {
+  .footer__copyright {
+    font-size: 0.9rem;
+  }
 }/*# sourceMappingURL=bio.css.map */
