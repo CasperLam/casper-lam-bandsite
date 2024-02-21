@@ -1,0 +1,44 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.hero {
+  background-image: url(../../assets/images/hero-shows.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  @include tablet-up {
+    height: 25rem;
+  }
+
+  @include desktop-up {
+    height: 40rem;
+  }
+
+  &__overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: $bandsite-black;
+    opacity: 50%;
+  }
+
+  &__music,
+  &__title,
+  &__sub-title {
+    position: relative;
+    width: 100%;
+    max-width: $max-width;
+    padding: 1rem;
+    color: $white;
+
+    @include tablet-up {
+      padding: 2rem;
+      font-size: 3.75rem;
+    }
+  }
+}
