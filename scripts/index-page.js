@@ -72,10 +72,11 @@ const handleSubmit = (event) => {
 
   // Validation
 
-  // Create object from form fields
+  // Create object from form fields and include date
+  const today = new Date(Date.now()).toLocaleString().split(",")[0];
   const post = {
     name: form.name.value,
-    date: form.date.value,
+    date: today,
     text: form.comment.value,
   };
 
