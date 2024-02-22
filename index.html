@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bandpage - Casper</title>
     <link rel="stylesheet" href="./styles/bio.css" />
+    <script src="./scripts/index-page.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -116,30 +117,39 @@
         />
       </div>
     </section>
-    <form action="#" class="form">
-      <h2 class="form__title">Join the Conversation</h2>
-      <div class="form__container">
-        <div class="form__image"></div>
-        <div class="form__input-container">
-          <article class="input__wrapper">
-            <p class="input__title">NAME</p>
+    <section class="comments">
+      <h2 class="comments__title">Join the Conversation</h2>
+      <div class="comments__form">
+        <img
+          src="./assets/images/Mohan-muruge.jpg"
+          alt=""
+          class="comments__image"
+        />
+        <form class="form">
+          <div class="form__group">
+            <label for="name" class="form__label">NAME</label>
             <input
               type="text"
-              placeholder="Enter yout name"
-              class="input__name"
+              name="name"
+              id="name"
+              class="form__input"
+              placeholder="Enter your name"
             />
-          </article>
-          <article class="input__wrapper">
-            <p class="input__title">COMMENT</p>
-            <input
-              type="text"
+          </div>
+          <div class="form__group">
+            <label for="comment" class="form__label">COMMENT</label>
+            <textarea
+              name="comment"
+              id="comment"
+              class="form__input"
               placeholder="Add a new comment"
-              class="input__name"
-            />
-          </article>
-        </div>
+            ></textarea>
+          </div>
+          <button class="form__btn">Comment</button>
+        </form>
       </div>
-    </form>
+      <div class="post"></div>
+    </section>
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__start">

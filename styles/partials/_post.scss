@@ -1,0 +1,8 @@
+.post {
+  display: flex;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+}

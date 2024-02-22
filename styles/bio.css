@@ -280,13 +280,21 @@ h3 {
   }
 }
 
-.form__image {
+.comments__image {
   background-image: url(../../assets/images/Mohan-muruge.jpg);
-  background-position: left;
+  background-position: right;
   background-size: cover;
   width: 3rem;
   height: 3rem;
-  border-radius: 100px;
+  border-radius: 50%;
+}
+
+.post {
+  display: flex;
+}
+.post__header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer {
