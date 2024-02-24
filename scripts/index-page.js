@@ -56,10 +56,7 @@ const displayPost = (post) => {
 const renderPosts = () => {
   postList.innerHTML = "";
 
-  for (let i = 0; i < posts.length; i++) {
-    const post = posts[i];
-    displayPost(post);
-  }
+  posts.forEach((post) => displayPost(post));
 };
 
 renderPosts();
@@ -70,7 +67,7 @@ const handleSubmit = (event) => {
 
   const form = event.target;
 
-  // Validation
+  // Validation if one can be bothered
 
   // Create object from form fields and include date
   const today = new Date(Date.now()).toLocaleString().split(",")[0];
