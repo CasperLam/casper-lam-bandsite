@@ -46,6 +46,10 @@
     justify-content: space-between;
   }
 
+  @include desktop-up {
+    margin-right: 0;
+  }
+
   &__title {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -111,6 +115,10 @@
   @include tablet-up {
     display: flex;
     justify-content: space-between;
+  }
+
+  @include desktop-up {
+    margin-right: 0;
   }
 
   &__title {

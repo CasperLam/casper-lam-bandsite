@@ -5,18 +5,18 @@
   background-image: url(../../assets/images/hero-shows.jpg);
   background-position: center;
   background-size: cover;
-  height: 25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
+  padding: 2rem 0;
 
   @include tablet-up {
-    height: 25rem;
+    padding: 4rem 0;
   }
 
   @include desktop-up {
-    height: 40rem;
+    padding: 10rem 0;
   }
 
   &__overlay {
@@ -27,18 +27,61 @@
     opacity: 50%;
   }
 
-  &__music,
   &__title,
   &__sub-title {
     position: relative;
-    width: 100%;
     max-width: $max-width;
-    padding: 1rem;
+    margin: 1rem;
     color: $white;
 
     @include tablet-up {
-      padding: 2rem;
+      margin: 2rem;
+      font-size: 1.5rem;
+    }
+
+    @include desktop-up {
+      width: 100%;
+      margin: 2rem auto;
+    }
+  }
+
+  &__title {
+    @include tablet-up {
       font-size: 3.75rem;
+      line-height: 4.5rem;
+      margin-top: 0;
+      width: 75%;
+    }
+
+    @include desktop-up {
+      width: 50%;
+      margin: 0;
+    }
+  }
+
+  &__music {
+    position: relative;
+    margin: 1rem;
+    width: 90%;
+
+    @include tablet-up {
+      margin: 2rem;
+      font-size: 1.5rem;
+      width: 30rem;
+    }
+
+    @include desktop-up {
+      margin: 0;
+    }
+  }
+
+  &__container {
+    @include desktop-up {
+      max-width: $max-width;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 }
