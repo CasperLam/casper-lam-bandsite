@@ -294,8 +294,21 @@ h3 {
     padding: 3rem 2rem 0rem 2rem;
   }
 }
+@media (min-width: 80rem) {
+  .comments {
+    max-width: 63.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 0 1rem 0;
+  }
+}
 .comments__title {
   margin-bottom: 1rem;
+}
+@media (min-width: 48rem) {
+  .comments__title {
+    font-size: 2rem;
+  }
 }
 .comments__form {
   display: flex;
@@ -304,6 +317,13 @@ h3 {
 @media (min-width: 48rem) {
   .comments__form {
     margin: 0 2rem;
+  }
+}
+@media (min-width: 80rem) {
+  .comments__form {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .comments__image {
@@ -337,9 +357,11 @@ h3 {
 }
 .form__input::-moz-placeholder {
   color: #323232;
+  font-size: 1rem;
 }
 .form__input::placeholder {
   color: #323232;
+  font-size: 1rem;
 }
 .form__input--area {
   height: 7rem;
@@ -375,6 +397,43 @@ h3 {
 .post {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 48rem) {
+  .post {
+    margin: 0 2rem;
+  }
+}
+@media (min-width: 80rem) {
+  .post {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.post__card {
+  display: flex;
+  margin: 1rem 0;
+  border-bottom: 3px solid #e1e1e1;
+}
+.post__image {
+  background-color: #e1e1e1;
+  width: 3rem;
+  height: 3rem;
+  min-width: 3rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.post__body {
+  margin-bottom: 1rem;
+}
+.post__header {
+  margin-bottom: 1rem;
+}
+.post__name {
+  font-family: "Avenir Next LT Pro-Demi";
+}
+.post__date {
+  color: #afafaf;
 }
 
 .post {

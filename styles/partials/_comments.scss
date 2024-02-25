@@ -9,8 +9,19 @@
     padding: 3rem 2rem 0rem 2rem;
   }
 
+  @include desktop-up {
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 0 1rem 0;
+  }
+
   &__title {
     @include component-space;
+
+    @include tablet-up {
+      font-size: 2rem;
+    }
   }
 
   &__form {
@@ -19,6 +30,12 @@
 
     @include tablet-up {
       margin: 0 2rem;
+    }
+
+    @include desktop-up {
+      max-width: 50%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -55,6 +72,7 @@
 
     &::placeholder {
       color: $bandsite-black;
+      font-size: 1rem;
     }
 
     &--area {
@@ -95,4 +113,44 @@
 .post {
   display: flex;
   flex-direction: column;
+  @include tablet-up {
+    margin: 0 2rem;
+  }
+
+  @include desktop-up {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__card {
+    display: flex;
+    margin: 1rem 0;
+    border-bottom: 3px solid $mercury;
+  }
+
+  &__image {
+    background-color: $mercury;
+    width: 3rem;
+    height: 3rem;
+    min-width: 3rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+
+  &__body {
+    @include component-space;
+  }
+
+  &__header {
+    @include component-space;
+  }
+
+  &__name {
+    font-family: $font-demi;
+  }
+
+  &__date {
+    color: $silver;
+  }
 }
