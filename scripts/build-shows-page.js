@@ -109,3 +109,13 @@ const renderShows = () => {
 };
 
 renderShows();
+
+// Apply selected state when a show is clicked
+const cards = document.querySelectorAll(`.card`);
+
+cards.forEach((event) => {
+  event.addEventListener("click", (e) => {
+    cards.forEach((card) => card.classList.remove("card--selected"));
+    e.target.classList.add("card--selected");
+  });
+});

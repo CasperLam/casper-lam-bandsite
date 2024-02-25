@@ -223,6 +223,9 @@ h3 {
     margin: 3rem 0 0 0;
   }
 }
+.shows__container {
+  margin-bottom: 1rem;
+}
 @media (min-width: 48rem) {
   .shows__container {
     margin-bottom: 2rem;
@@ -235,14 +238,14 @@ h3 {
 }
 
 .card {
-  margin-bottom: 1rem;
   border-bottom: 3px solid #e1e1e1;
   display: flex;
   flex-direction: column;
+  padding-top: 1rem;
 }
 @media (min-width: 48rem) {
   .card {
-    margin: 1rem 2rem 0 2rem;
+    margin: 0 2rem;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -251,6 +254,12 @@ h3 {
   .card {
     margin-right: 0;
   }
+}
+.card:hover {
+  background-color: #fafafa;
+}
+.card--selected {
+  background-color: #e1e1e1;
 }
 .card__title {
   margin-left: 1rem;

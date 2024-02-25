@@ -24,6 +24,8 @@
   }
 
   &__container {
+    @include component-space;
+
     @include tablet-up {
       margin-bottom: 2rem;
     }
@@ -35,19 +37,27 @@
 }
 
 .card {
-  @include component-space;
   border-bottom: 3px solid $mercury;
   display: flex;
   flex-direction: column;
+  padding-top: 1rem;
 
   @include tablet-up {
-    margin: 1rem 2rem 0 2rem;
+    margin: 0 2rem;
     flex-direction: row;
     justify-content: space-between;
   }
 
   @include desktop-up {
     margin-right: 0;
+  }
+
+  &:hover {
+    background-color: $alabaster;
+  }
+
+  &--selected {
+    background-color: $mercury;
   }
 
   &__title {
