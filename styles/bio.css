@@ -285,6 +285,27 @@ h3 {
   }
 }
 
+.comments {
+  padding: 1.5rem 1rem 0 1rem;
+  margin-bottom: 0;
+}
+@media (min-width: 48rem) {
+  .comments {
+    padding: 3rem 2rem 0rem 2rem;
+  }
+}
+.comments__title {
+  margin-bottom: 1rem;
+}
+.comments__form {
+  display: flex;
+  border-bottom: 3px solid #e1e1e1;
+}
+@media (min-width: 48rem) {
+  .comments__form {
+    margin: 0 2rem;
+  }
+}
 .comments__image {
   background-image: url(../../assets/images/Mohan-muruge.jpg);
   background-position: right;
@@ -292,6 +313,68 @@ h3 {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+}
+
+.form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.form__group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.form__input {
+  background-color: #fafafa;
+  border-radius: 4px;
+  border: 2px solid #e1e1e1;
+  padding: 0.75rem;
+  color: #323232;
+  font-family: "Avenir Next LT Pro";
+}
+.form__input::-moz-placeholder {
+  color: #323232;
+}
+.form__input::placeholder {
+  color: #323232;
+}
+.form__input--area {
+  height: 7rem;
+}
+.form__label {
+  margin-bottom: 0.25rem;
+  font-family: "Avenir Next LT Pro-Demi";
+  font-size: 0.75rem;
+  color: #afafaf;
+}
+.form__btn {
+  margin-bottom: 1rem;
+  font-family: "Avenir Next LT Pro-Demi";
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  background-color: #323232;
+  padding: 0.75rem;
+}
+.form__btn:hover {
+  background-color: #000;
+}
+@media (min-width: 48rem) {
+  .form__btn {
+    margin-left: 0;
+    margin-right: 0;
+    width: 10rem;
+    align-self: flex-end;
+  }
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
 }
 
 .post {
