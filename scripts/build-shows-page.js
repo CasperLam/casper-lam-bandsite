@@ -40,32 +40,33 @@ const displayShow = (show) => {
   showList.appendChild(card);
 
   const dateTitle = document.createElement(`p`);
-  dateTitle.classList.add(`card__date-title`);
+  dateTitle.classList.add(`card__title`);
   dateTitle.innerText = `DATE`;
   card.appendChild(dateTitle);
 
   const dateText = document.createElement(`p`);
-  dateText.classList.add(`card__date-text`);
+  dateText.classList.add(`card__text`);
+  dateText.classList.add(`card__text--date`);
   dateText.innerText = show.date;
   card.appendChild(dateText);
 
   const venueTitle = document.createElement(`p`);
-  venueTitle.classList.add(`card__venue-title`);
+  venueTitle.classList.add(`card__title`);
   venueTitle.innerText = `VENUE`;
   card.appendChild(venueTitle);
 
   const venueText = document.createElement(`p`);
-  venueText.classList.add(`card__venue-text`);
+  venueText.classList.add(`card__text`);
   venueText.innerText = show.venue;
   card.appendChild(venueText);
 
   const locationTitle = document.createElement(`p`);
-  locationTitle.classList.add(`card__location-title`);
+  locationTitle.classList.add(`card__title`);
   locationTitle.innerText = `LOCATION`;
   card.appendChild(locationTitle);
 
   const locationText = document.createElement(`p`);
-  locationText.classList.add(`card__location-text`);
+  locationText.classList.add(`card__text`);
   locationText.innerText = show.location;
   card.appendChild(locationText);
 
@@ -97,7 +98,7 @@ const displayShowTitles = () => {
   tableTitles.appendChild(location);
 
   const spacer = document.createElement(`div`);
-  spacer.classList.add(`table__spacer`);
+  spacer.classList.add(`table__title`);
   tableTitles.appendChild(spacer);
 };
 

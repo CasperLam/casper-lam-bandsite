@@ -1,0 +1,124 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.shows {
+  @include desktop-up {
+    display: flex;
+    justify-content: space-between;
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+
+  &__title {
+    max-width: $max-width;
+    margin: 2rem 1rem;
+
+    @include tablet-up {
+      font-size: 2rem;
+      margin: 3rem 2rem 0 2rem;
+    }
+
+    @include desktop-up {
+      margin: 3rem 0 0 0;
+    }
+  }
+
+  &__container {
+    @include tablet-up {
+      margin-bottom: 2rem;
+    }
+
+    @include desktop-up {
+      width: 80%;
+    }
+  }
+}
+
+.card {
+  @include component-space;
+  border-bottom: 3px solid $mercury;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet-up {
+    margin: 1rem 2rem 0 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    max-width: $max-width;
+    font-family: $font-demi;
+    font-size: 0.75rem;
+    color: $silver;
+
+    @include tablet-up {
+      display: none;
+    }
+  }
+
+  &__text {
+    @include component-space;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    max-width: $max-width;
+    display: flex;
+    align-items: center;
+
+    @include tablet-up {
+      width: 20%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &--date {
+      font-family: $font-demi;
+    }
+  }
+
+  &__btn {
+    @include component-space;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: $font-demi;
+    font-size: 1rem;
+    color: $white;
+    border: none;
+    border-radius: 4px;
+    background-color: $bandsite-black;
+    padding: 0.75rem;
+
+    &:hover {
+      background-color: $brandsite-darkblack;
+    }
+
+    @include tablet-up {
+      width: 20%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+.table {
+  display: none;
+  @include component-space;
+  margin: 3rem 2rem 0 2rem;
+  max-width: $max-width;
+
+  @include tablet-up {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-family: $font-demi;
+    color: $silver;
+
+    @include tablet-up {
+      width: 20%;
+    }
+  }
+}

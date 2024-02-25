@@ -26,6 +26,15 @@
       flex-direction: row;
       justify-content: space-between;
     }
+
+    &-spacer {
+      display: none;
+
+      @include desktop-up {
+        display: block;
+        width: 31%;
+      }
+    }
   }
 
   &__title {
@@ -36,7 +45,9 @@
   }
 
   &__social-container {
-    width: 31%;
+    @include tablet-up {
+      width: 31%;
+    }
   }
 
   &__social-icon {

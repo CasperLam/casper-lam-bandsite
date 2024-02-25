@@ -11,3 +11,7 @@
     @content;
   }
 }
+
+@mixin component-space {
+  margin-bottom: 1rem;
+}
