@@ -68,7 +68,7 @@
     border: 2px solid $mercury;
     padding: 0.75rem;
     color: $bandsite-black;
-    font-family: $font-body;
+    font-family: "Avenir Next LT";
 
     &::placeholder {
       color: $bandsite-black;
@@ -82,14 +82,14 @@
 
   &__label {
     margin-bottom: 0.25rem;
-    font-family: $font-demi;
+    font-family: "Avenir Next LT";
     font-size: 0.75rem;
     color: $silver;
   }
 
   &__btn {
     @include component-space;
-    font-family: $font-demi;
+    font-family: "Avenir Next LT";
     font-size: 1rem;
     color: $white;
     border: none;
@@ -140,6 +140,7 @@
 
   &__body {
     @include component-space;
+    align-self: stretch;
   }
 
   &__header {
@@ -147,7 +148,7 @@
   }
 
   &__name {
-    font-family: $font-demi;
+    font-family: "Avenir Next LT";
   }
 
   &__date {

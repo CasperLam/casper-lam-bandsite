@@ -33,35 +33,31 @@ const displayPost = (post) => {
   body.appendChild(content);
 };
 
-siteApi.getComments();
-//Render each comment post
-// const renderPosts = () => {
-//   postList.innerHTML = "";
+async function renderPosts() {
+  postList.innerHTML = "";
 
-//   posts.forEach((post) => displayPost(post));
-// };
+  const posts = await siteApi.getComments();
 
-// renderPosts();
+  // new comments on top
+  posts.data.forEach((post) => displayPost(post));
+}
 
-// When submit button is clicked add a new comment based on the information in the form fields
-const handleSubmit = (event) => {
+renderPosts();
+
+async function handleSubmit(event) {
   event.preventDefault();
 
-  const form = event.target;
-
-  const today = new Date(Date.now()).toLocaleDateString();
-  const post = {
-    name: form.name.value,
-    timestamp: today,
-    comment: form.comment.value,
+  const newComment = {
+    name: event.target.name.value,
+    comment: event.target.comment.value,
   };
 
-  // posts.unshift(post);
+  await siteApi.postComment(newComment);
 
   renderPosts();
 
   form.reset();
-};
+}
 
 const form = document.querySelector(`.form`);
 form.addEventListener(`submit`, handleSubmit);

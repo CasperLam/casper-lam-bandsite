@@ -64,7 +64,7 @@
     margin-left: 1rem;
     margin-right: 1rem;
     max-width: $max-width;
-    font-family: $font-demi;
+    font-family: "Avenir Next LT";
     font-size: 0.75rem;
     color: $silver;
 
@@ -88,7 +88,7 @@
     }
 
     &--date {
-      font-family: $font-demi;
+      font-family: "Avenir Next LT";
     }
   }
 
@@ -96,7 +96,7 @@
     @include component-space;
     margin-left: 1rem;
     margin-right: 1rem;
-    font-family: $font-demi;
+    font-family: "Avenir Next LT";
     font-size: 1rem;
     color: $white;
     border: none;
@@ -132,7 +132,7 @@
   }
 
   &__title {
-    font-family: $font-demi;
+    font-family: "Avenir Next LT";
     color: $silver;
 
     @include tablet-up {

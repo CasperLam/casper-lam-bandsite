@@ -1,43 +1,5 @@
-// const allShows = [
-//   {
-//     date: `Mon Sept 09 2024`,
-//     venue: `Ronald Lane`,
-//     location: `San Francisco, CA`,
-//   },
-//   {
-//     date: `Tue Sept 17 2024`,
-//     venue: `Pier 3 East`,
-//     location: `San Francisco, CA`,
-//   },
-//   {
-//     date: `Sat Oct 12 2024`,
-//     venue: `View Lounge`,
-//     location: `San Francisco, CA`,
-//   },
-//   {
-//     date: `Sat Nov 16 2024`,
-//     venue: `Hyatt Agency`,
-//     location: `San Francisco, CA`,
-//   },
-//   {
-//     date: `Fri Nov 29 2024`,
-//     venue: `Moscow Center`,
-//     location: `San Francisco, CA`,
-//   },
-//   {
-//     date: `Wed Dec 18 2024`,
-//     venue: `Press Club`,
-//     location: `San Francisco, CA`,
-//   },
-// ];
-
-// import BandsiteApi from "./band-site-api";
-
-// const siteApi = new BandsiteApi();
-
 const showList = document.querySelector(`.shows__container`);
 
-//create show contents
 const displayShow = (show) => {
   const card = document.createElement(`article`);
   card.classList.add(`card`);
@@ -51,7 +13,7 @@ const displayShow = (show) => {
   const dateText = document.createElement(`p`);
   dateText.classList.add(`card__text`);
   dateText.classList.add(`card__text--date`);
-  dateText.innerText = show.date;
+  dateText.innerText = new Date(show.date).toLocaleDateString();
   card.appendChild(dateText);
 
   const venueTitle = document.createElement(`p`);
@@ -61,7 +23,7 @@ const displayShow = (show) => {
 
   const venueText = document.createElement(`p`);
   venueText.classList.add(`card__text`);
-  venueText.innerText = show.venue;
+  venueText.innerText = show.place;
   card.appendChild(venueText);
 
   const locationTitle = document.createElement(`p`);
@@ -106,20 +68,17 @@ const displayShowTitles = () => {
   tableTitles.appendChild(spacer);
 };
 
-// Render the list of show cards and table
-const renderShows = () => {
-  displayShowTitles();
-  allShows.forEach((show) => displayShow(show));
-};
-
-renderShows();
+siteApi.getShows();
 
 // Apply selected state when a show is clicked
-const cards = document.querySelectorAll(`.card`);
+const cards = document.querySelector(`.card`);
+console.log(cards);
 
-cards.forEach((event) => {
-  event.addEventListener("click", (e) => {
-    cards.forEach((card) => card.classList.remove("card--selected"));
-    e.target.classList.add("card--selected");
-  });
-});
+// cards.forEach((card) => {
+//   card.addEventListener("click", (e) => {
+//     // cards.forEach((card) => {
+//     //   card.classList.remove("card--selected");
+//     // });
+//     e.target.classList.add("card--selected");
+//   });
+// });

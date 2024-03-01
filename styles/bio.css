@@ -1,20 +1,20 @@
 @font-face {
-  font-family: Avenir Next LT Pro;
+  font-family: "Avenir Next LT";
   src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf) format(opentype), url(../../assets/fonts/AvenirNextLTPro.ttf) format(truetype);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: Avenir Next LT Pro-Demi;
+  font-family: "Avenir Next LT";
   src: url(../../assets/fonts/AvenirNextLTPro-Demi.otf) format(opentype), url(../../assets/fonts/AvenirNextLTProDemi.ttf) format(truetype);
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
-  font-family: Avenir Next LT Pro-Bold;
+  font-family: "Avenir Next LT";
   src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf) format(opentype), url(../../assets/fonts/AvenirNextLTProBold.ttf) format(truetype);
   font-weight: 700;
-  font-style: bold;
+  font-style: normal;
 }
 *,
 *::before,
@@ -25,19 +25,17 @@
 }
 
 body {
-  font-family: "Avenir Next LT Pro";
+  font-family: "Avenir Next LT", monospace, sans-serif;
   line-height: 1.5rem;
 }
 
 h1,
 h2 {
-  font-family: "Avenir Next LT Pro-Bold";
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
 h3 {
-  font-family: "Avenir Next LT Pro";
   line-height: 1.5rem;
 }
 
@@ -197,7 +195,7 @@ h3 {
   width: 100%;
 }
 .about__quote, .about__quote-author {
-  font-family: "Avenir Next LT Pro-Bold";
+  font-family: "Avenir Next LT";
 }
 .about__quote {
   margin-bottom: 0.5rem;
@@ -353,7 +351,7 @@ h3 {
   border: 2px solid #e1e1e1;
   padding: 0.75rem;
   color: #323232;
-  font-family: "Avenir Next LT Pro";
+  font-family: "Avenir Next LT";
 }
 .form__input::-moz-placeholder {
   color: #323232;
@@ -368,13 +366,13 @@ h3 {
 }
 .form__label {
   margin-bottom: 0.25rem;
-  font-family: "Avenir Next LT Pro-Demi";
+  font-family: "Avenir Next LT";
   font-size: 0.75rem;
   color: #afafaf;
 }
 .form__btn {
   margin-bottom: 1rem;
-  font-family: "Avenir Next LT Pro-Demi";
+  font-family: "Avenir Next LT";
   font-size: 1rem;
   color: #fff;
   border: none;
@@ -425,12 +423,13 @@ h3 {
 }
 .post__body {
   margin-bottom: 1rem;
+  align-self: stretch;
 }
 .post__header {
   margin-bottom: 1rem;
 }
 .post__name {
-  font-family: "Avenir Next LT Pro-Demi";
+  font-family: "Avenir Next LT";
 }
 .post__date {
   color: #afafaf;
