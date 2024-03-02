@@ -140,7 +140,7 @@
 
   &__body {
     @include component-space;
-    align-self: stretch;
+    width: 100%;
   }
 
   &__header {

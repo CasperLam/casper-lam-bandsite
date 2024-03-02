@@ -5,6 +5,7 @@ class BandsiteApi {
   async getComments() {
     try {
       const response = await axios.get(`${url}comments${apiKey}`);
+      response.data.sort((b, a) => a.timestamp - b.timestamp);
       return response;
     } catch (error) {
       console.log(`error`);
@@ -17,6 +18,7 @@ class BandsiteApi {
         name: newComment.name,
         comment: newComment.comment,
       });
+      // use .sort(a, b) and must have sorted out timestamps in the get comments bit
       return response;
     } catch (error) {
       console.log(`error`);

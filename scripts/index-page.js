@@ -38,7 +38,6 @@ async function renderPosts() {
 
   const posts = await siteApi.getComments();
 
-  // new comments on top
   posts.data.forEach((post) => displayPost(post));
 }
 

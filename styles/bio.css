@@ -423,7 +423,7 @@ h3 {
 }
 .post__body {
   margin-bottom: 1rem;
-  align-self: stretch;
+  width: 100%;
 }
 .post__header {
   margin-bottom: 1rem;

@@ -42,7 +42,6 @@ const displayShow = (show) => {
   card.appendChild(btn);
 };
 
-//create table titles seperate function
 const displayShowTitles = () => {
   const tableTitles = document.createElement(`section`);
   tableTitles.classList.add(`table`);
