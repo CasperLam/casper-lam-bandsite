@@ -145,10 +145,13 @@
 
   &__header {
     @include component-space;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__name {
     font-family: "Avenir Next LT";
+    font-weight: 700;
   }
 
   &__date {

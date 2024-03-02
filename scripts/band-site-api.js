@@ -1,10 +1,15 @@
 const apiKey = `?api_key=e5e34cfc-0a39-401d-8a19-160624c9b0dc`;
-const url = `https://unit-2-project-api-25c1595833b2.herokuapp.com/`;
+const apiUrl = `https://unit-2-project-api-25c1595833b2.herokuapp.com/`;
 
 class BandsiteApi {
+  constructor(url, key) {
+    this.url = url;
+    this.key = key;
+  }
+
   async getComments() {
     try {
-      const response = await axios.get(`${url}comments${apiKey}`);
+      const response = await axios.get(`${this.url}comments${this.key}`);
       response.data.sort((b, a) => a.timestamp - b.timestamp);
       return response;
     } catch (error) {
@@ -14,11 +19,10 @@ class BandsiteApi {
 
   async postComment(newComment) {
     try {
-      const response = await axios.post(`${url}comments${apiKey}`, {
+      const response = await axios.post(`${this.url}comments${this.key}`, {
         name: newComment.name,
         comment: newComment.comment,
       });
-      // use .sort(a, b) and must have sorted out timestamps in the get comments bit
       return response;
     } catch (error) {
       console.log(`error`);
@@ -27,7 +31,7 @@ class BandsiteApi {
 
   async getShows() {
     try {
-      const response = await axios.get(`${url}showdates${apiKey}`);
+      const response = await axios.get(`${this.url}showdates${this.key}`);
       displayShowTitles();
       response.data.forEach(displayShow);
     } catch (error) {
@@ -36,4 +40,4 @@ class BandsiteApi {
   }
 }
 
-const siteApi = new BandsiteApi();
+const siteApi = new BandsiteApi(apiUrl, apiKey);

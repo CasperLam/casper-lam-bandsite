@@ -13,21 +13,17 @@
     margin: 3rem auto 0 auto;
   }
 
-  & * {
-    margin-bottom: 1rem;
-
-    @include tablet-up {
-      margin-bottom: 2rem;
-    }
-  }
-
   &__title {
+    @include component-space;
+
     @include tablet-up {
       font-size: 2rem;
     }
   }
 
   &__container {
+    @include component-space;
+
     @include tablet-up {
       margin: 0 2.5rem;
     }
@@ -38,12 +34,17 @@
   }
 
   &__image {
+    @include component-space;
+
     width: 100%;
   }
 
   &__quote,
   &__quote-author {
+    @include component-space;
+
     font-family: "Avenir Next LT";
+    font-weight: 600;
   }
 
   &__quote {
@@ -60,7 +61,9 @@
   }
 
   &__name {
+    @include component-space;
     margin-top: 1.5rem;
+    font-weight: 600;
 
     @include tablet-up {
       margin-top: 3rem;
@@ -78,6 +81,7 @@
   }
 
   &__content-left {
+    @include component-space;
     margin-right: 2rem;
   }
 }

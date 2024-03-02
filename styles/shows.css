@@ -229,6 +229,11 @@ h3 {
     margin-bottom: 2rem;
   }
 }
+@media (min-width: 48rem) {
+  .shows__container {
+    margin-bottom: 2rem;
+  }
+}
 @media (min-width: 80rem) {
   .shows__container {
     width: 80%;
@@ -282,6 +287,11 @@ h3 {
 }
 @media (min-width: 48rem) {
   .card__text {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 48rem) {
+  .card__text {
     width: 20%;
     margin-left: 0;
     margin-right: 0;
@@ -289,6 +299,7 @@ h3 {
 }
 .card__text--date {
   font-family: "Avenir Next LT";
+  font-weight: 600;
 }
 .card__btn {
   margin-bottom: 1rem;
@@ -301,6 +312,11 @@ h3 {
   border-radius: 4px;
   background-color: #323232;
   padding: 0.75rem;
+}
+@media (min-width: 48rem) {
+  .card__btn {
+    margin-bottom: 2rem;
+  }
 }
 .card__btn:hover {
   background-color: #000;
@@ -318,6 +334,11 @@ h3 {
   margin-bottom: 1rem;
   margin: 3rem 2rem 0 2rem;
   max-width: 63.75rem;
+}
+@media (min-width: 48rem) {
+  .table {
+    margin-bottom: 2rem;
+  }
 }
 @media (min-width: 48rem) {
   .table {

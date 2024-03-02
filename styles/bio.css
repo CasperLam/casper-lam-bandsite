@@ -168,17 +168,25 @@ h3 {
     margin: 3rem auto 0 auto;
   }
 }
-.about * {
+.about__title {
   margin-bottom: 1rem;
 }
 @media (min-width: 48rem) {
-  .about * {
+  .about__title {
     margin-bottom: 2rem;
   }
 }
 @media (min-width: 48rem) {
   .about__title {
     font-size: 2rem;
+  }
+}
+.about__container {
+  margin-bottom: 1rem;
+}
+@media (min-width: 48rem) {
+  .about__container {
+    margin-bottom: 2rem;
   }
 }
 @media (min-width: 48rem) {
@@ -192,10 +200,23 @@ h3 {
   }
 }
 .about__image {
+  margin-bottom: 1rem;
   width: 100%;
 }
+@media (min-width: 48rem) {
+  .about__image {
+    margin-bottom: 2rem;
+  }
+}
 .about__quote, .about__quote-author {
+  margin-bottom: 1rem;
   font-family: "Avenir Next LT";
+  font-weight: 600;
+}
+@media (min-width: 48rem) {
+  .about__quote, .about__quote-author {
+    margin-bottom: 2rem;
+  }
 }
 .about__quote {
   margin-bottom: 0.5rem;
@@ -212,7 +233,14 @@ h3 {
   }
 }
 .about__name {
+  margin-bottom: 1rem;
   margin-top: 1.5rem;
+  font-weight: 600;
+}
+@media (min-width: 48rem) {
+  .about__name {
+    margin-bottom: 2rem;
+  }
 }
 @media (min-width: 48rem) {
   .about__name {
@@ -231,7 +259,13 @@ h3 {
   }
 }
 .about__content-left {
+  margin-bottom: 1rem;
   margin-right: 2rem;
+}
+@media (min-width: 48rem) {
+  .about__content-left {
+    margin-bottom: 2rem;
+  }
 }
 
 .gallery {
@@ -305,6 +339,11 @@ h3 {
 }
 @media (min-width: 48rem) {
   .comments__title {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 48rem) {
+  .comments__title {
     font-size: 2rem;
   }
 }
@@ -345,6 +384,11 @@ h3 {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 48rem) {
+  .form__group {
+    margin-bottom: 2rem;
+  }
+}
 .form__input {
   background-color: #fafafa;
   border-radius: 4px;
@@ -379,6 +423,11 @@ h3 {
   border-radius: 4px;
   background-color: #323232;
   padding: 0.75rem;
+}
+@media (min-width: 48rem) {
+  .form__btn {
+    margin-bottom: 2rem;
+  }
 }
 .form__btn:hover {
   background-color: #000;
@@ -425,22 +474,27 @@ h3 {
   margin-bottom: 1rem;
   width: 100%;
 }
+@media (min-width: 48rem) {
+  .post__body {
+    margin-bottom: 2rem;
+  }
+}
 .post__header {
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 48rem) {
+  .post__header {
+    margin-bottom: 2rem;
+  }
 }
 .post__name {
   font-family: "Avenir Next LT";
+  font-weight: 700;
 }
 .post__date {
   color: #afafaf;
-}
-
-.post {
-  display: flex;
-}
-.post__header {
-  display: flex;
-  justify-content: space-between;
 }
 
 .footer {

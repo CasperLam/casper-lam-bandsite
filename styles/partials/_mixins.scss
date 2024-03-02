@@ -14,4 +14,8 @@
 
 @mixin component-space {
   margin-bottom: 1rem;
+
+  @include tablet-up {
+    margin-bottom: 2rem;
+  }
 }

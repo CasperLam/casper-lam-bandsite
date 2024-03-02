@@ -19,7 +19,7 @@ const displayShow = (show) => {
   const dateText = document.createElement(`p`);
   dateText.classList.add(`card__text`);
   dateText.classList.add(`card__text--date`);
-  dateText.innerText = new Date(show.date).toLocaleDateString();
+  dateText.innerText = new Date(show.date).toDateString();
   card.appendChild(dateText);
 
   const venueTitle = document.createElement(`p`);
@@ -74,14 +74,3 @@ const displayShowTitles = () => {
 };
 
 siteApi.getShows();
-
-// Apply selected state when a show is clicked
-
-// cards.forEach((card) => {
-//   card.addEventListener("click", (e) => {
-//     // cards.forEach((card) => {
-//     //   card.classList.remove("card--selected");
-//     // });
-//     e.target.classList.add("card--selected");
-//   });
-// });
