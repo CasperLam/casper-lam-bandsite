@@ -2,6 +2,12 @@ const showList = document.querySelector(`.shows__container`);
 
 const displayShow = (show) => {
   const card = document.createElement(`article`);
+  card.addEventListener(`click`, () => {
+    document.querySelectorAll(`.card`).forEach((card) => {
+      card.classList.remove(`card--selected`);
+    });
+    card.classList.add(`card--selected`);
+  });
   card.classList.add(`card`);
   showList.appendChild(card);
 
@@ -70,8 +76,6 @@ const displayShowTitles = () => {
 siteApi.getShows();
 
 // Apply selected state when a show is clicked
-const cards = document.querySelector(`.card`);
-console.log(cards);
 
 // cards.forEach((card) => {
 //   card.addEventListener("click", (e) => {
